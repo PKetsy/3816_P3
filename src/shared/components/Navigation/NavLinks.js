@@ -23,3 +23,5 @@ const NavLinks = (props) => {
 };
 
 export default NavLinks;
+
+//collection of different links in MainNavigation

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //LINK wraps and renders anchor tags, and has navigation logic
 import Card from "../../shared/components/UIElements/Card";
-import Avatar from "../../shared/components/UIElements/Avatar/Avatar/Avatar";
+import Avatar from "../../shared/components/UIElements/Avatar";
 import "./UserItem.css";
 
 const UserItem = (props) => {

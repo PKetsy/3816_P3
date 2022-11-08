@@ -8,6 +8,7 @@ const MainHeader = (props) => {
       {props.children}
       {/* //props children always refers to things passed through opening and
       closing tags //of our components */}
+      {/* see MainNavigation file for example */}
     </header>
   );
 };
