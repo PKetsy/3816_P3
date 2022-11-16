@@ -31,7 +31,7 @@ const Map = (props) => {
       style={props.style}
     ></div>
   );
-  //react setting up a magic connection between the div, and constant on line 8.
+  //react setting up a magic connection between the div, and constant on line 10.
   //  and the constant holds a pointer to this div above.
 };
 
