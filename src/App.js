@@ -16,13 +16,16 @@ import { AuthContext } from "./shared/context/auth-context";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userId, setuserId] = useState(false);
 
-  const login = useCallback(() => {
+  const login = useCallback((uid) => {
     setIsLoggedIn(true);
+    setuserId(uid);
   }, []);
 
   const logout = useCallback(() => {
     setIsLoggedIn(false);
+    setuserId(null);
   }, []);
 
   let routes;
@@ -65,7 +68,12 @@ const App = () => {
   return (
     //in AuthContext, it is binding an initial value to a new value.  components that listen to the context will re-render
     <AuthContext.Provider
-      value={{ isLoggedIn: isLoggedIn, login: login, logout: logout }}
+      value={{
+        isLoggedIn: isLoggedIn,
+        userId: userId,
+        login: login,
+        logout: logout,
+      }}
     >
       <Router>
         <MainNavigation />
